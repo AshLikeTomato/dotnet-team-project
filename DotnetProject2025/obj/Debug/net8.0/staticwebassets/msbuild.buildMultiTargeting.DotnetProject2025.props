@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DotnetProject2025.props" />
+</Project>
