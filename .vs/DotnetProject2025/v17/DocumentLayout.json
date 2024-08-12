@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|c:\\users\\predator\\downloads\\dev_thue\\dotnet-team-project-kimanh\\dotnetproject2025\\views\\credential\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|solutionrelative:dotnetproject2025\\views\\credential\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|c:\\users\\predator\\downloads\\dev_thue\\dotnet-team-project-kimanh\\dotnetproject2025\\wwwroot\\css\\credential.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|solutionrelative:dotnetproject2025\\wwwroot\\css\\credential.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|c:\\users\\predator\\downloads\\dev_thue\\dotnet-team-project-kimanh\\dotnetproject2025\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|solutionrelative:dotnetproject2025\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|c:\\users\\predator\\downloads\\dev_thue\\dotnet-team-project-kimanh\\dotnetproject2025\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|solutionrelative:dotnetproject2025\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|c:\\users\\predator\\downloads\\dev_thue\\dotnet-team-project-kimanh\\dotnetproject2025\\services\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5848E5-8104-415B-B14E-BC60DE748B08}|DotnetProject2025\\DotnetProject2025.csproj|solutionrelative:dotnetproject2025\\services\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShoppingCartService.cs",
+              "DocumentMoniker": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Services\\ShoppingCartService.cs",
+              "RelativeDocumentMoniker": "DotnetProject2025\\Services\\ShoppingCartService.cs",
+              "ToolTip": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Services\\ShoppingCartService.cs",
+              "RelativeToolTip": "DotnetProject2025\\Services\\ShoppingCartService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAnwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T10:08:29.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "DotnetProject2025\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Controllers\\CartController.cs",
+              "RelativeToolTip": "DotnetProject2025\\Controllers\\CartController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwBEAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T10:08:02.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "credential.css",
+              "DocumentMoniker": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\wwwroot\\css\\credential.css",
+              "RelativeDocumentMoniker": "DotnetProject2025\\wwwroot\\css\\credential.css",
+              "ToolTip": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\wwwroot\\css\\credential.css",
+              "RelativeToolTip": "DotnetProject2025\\wwwroot\\css\\credential.css",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGQAAADWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-09T10:01:19.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "DotnetProject2025\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "DotnetProject2025\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T09:59:30.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Views\\Credential\\Login.cshtml",
+              "RelativeDocumentMoniker": "DotnetProject2025\\Views\\Credential\\Login.cshtml",
+              "ToolTip": "C:\\Users\\PREDATOR\\Downloads\\DEV_THUE\\dotnet-team-project-kimanh\\DotnetProject2025\\Views\\Credential\\Login.cshtml",
+              "RelativeToolTip": "DotnetProject2025\\Views\\Credential\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T09:25:57.482Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
