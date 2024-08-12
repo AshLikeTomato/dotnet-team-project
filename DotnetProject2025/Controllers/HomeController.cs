@@ -19,12 +19,12 @@ namespace DotnetProject2025.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _firebaseClient = new FirebaseClient("https://dotnetproject2025-default-rtdb.asia-southeast1.firebasedatabase.app/");
+            _firebaseClient = new FirebaseClient("https://dotnetproject2025-62899-default-rtdb.firebaseio.com/");
         }
 
         public async Task<IActionResult> Index()
         {
-            var firebaseUrl = "https://dotnetproject2025-default-rtdb.asia-southeast1.firebasedatabase.app/products.json";
+            var firebaseUrl = "https://dotnetproject2025-62899-default-rtdb.firebaseio.com/products.json";
 
             var jsonResponse = await client.GetStringAsync(firebaseUrl);
 

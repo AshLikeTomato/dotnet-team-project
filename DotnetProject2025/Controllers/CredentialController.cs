@@ -26,7 +26,7 @@ namespace DotnetProject2025.Controllers
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _firebaseClient = new FirebaseClient("https://dotnetproject2025-default-rtdb.asia-southeast1.firebasedatabase.app/");
+            _firebaseClient = new FirebaseClient("https://dotnetproject2025-62899-default-rtdb.firebaseio.com/");
         }
 
         [HttpPost("google-login")]

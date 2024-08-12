@@ -18,7 +18,7 @@ namespace DotnetProject2025.Controllers
         public CartController(IShoppingCartService shoppingCartService)
         {
             _shoppingCartService = shoppingCartService;
-            _firebaseClient = new FirebaseClient("https://dotnetproject2025-default-rtdb.asia-southeast1.firebasedatabase.app/");
+            _firebaseClient = new FirebaseClient("https://dotnetproject2025-62899-default-rtdb.firebaseio.com/");
         }
 
         public async Task<IActionResult> Index()

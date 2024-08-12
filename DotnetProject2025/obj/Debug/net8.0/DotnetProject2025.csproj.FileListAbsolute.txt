@@ -883,3 +883,4 @@ C:\Users\FPT Shop\Downloads\dotnet-team-project-kimanh-origin\DotnetProject2025\
 C:\Users\FPT Shop\Downloads\dotnet-team-project-kimanh-origin\DotnetProject2025\obj\Debug\net8.0\DotnetProject2025.pdb
 C:\Users\FPT Shop\Downloads\dotnet-team-project-kimanh-origin\DotnetProject2025\obj\Debug\net8.0\DotnetProject2025.genruntimeconfig.cache
 C:\Users\FPT Shop\Downloads\dotnet-team-project-kimanh-origin\DotnetProject2025\obj\Debug\net8.0\ref\DotnetProject2025.dll
+C:\Users\FPT Shop\Downloads\dotnet-team-project-kimanh-origin\DotnetProject2025\obj\Debug\net8.0\DotnetProject2025.sourcelink.json
