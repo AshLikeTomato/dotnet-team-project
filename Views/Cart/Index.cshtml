@@ -1,0 +1,95 @@
+﻿@model DotnetProject2025.Models.Cart
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+    var coupons = ViewBag.Coupons as List<DotnetProject2025.Models.Coupon>;
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0">Cart - @Model.Items.Count product(s)</h4>
+        </div>
+        <div class="card-body p-4">
+            @if (Model.Items.Any())
+            {
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 20%;">Product</th>
+                            <th scope="col" style="width: 30%;">Name</th>
+                            <th scope="col" style="width: 20%;">Price</th>
+                            <th scope="col" style="width: 20%;">Quantity</th>
+                            <th scope="col" style="width: 10%;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="~/images/@item.Product.Name" alt="@item.Product.Name" class="img-thumbnail"
+                                        style="max-width: 50px;" />
+                                </td>
+                                <td>@item.Product.Name</td>
+                                <td>@item.Product.Price.ToString("C")</td>
+                                <td>
+                                    <form asp-action="EditQuantity" method="post" class="d-flex align-items-center">
+                                        <input type="hidden" name="productId" value="@item.ProductId" />
+                                        <input type="number" name="quantity" value="@item.Quantity" min="1"
+                                            class="form-control text-center mx-2" style="width: 60px;" />
+                                        <button type="submit" class="btn btn-outline-secondary btn-sm">Update Quantity</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form asp-action="RemoveProduct" method="post">
+                                        <input type="hidden" name="productId" value="@item.ProductId" />
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <form asp-action="RemoveAllProducts" method="post">
+                        <button type="submit" class="btn btn-danger">Empty Cart</button>
+                    </form>
+                    <div class="text-end">
+                        <h4>Total Price: <strong>@Model.TotalAmount.ToString("C")</strong></h4>
+                    </div>
+                </div>
+
+                <form asp-action="ApplyCoupon" method="post" class="mt-4">
+                    <div class="input-group">
+                        <select name="couponCode" class="form-select">
+                            @if (Model.Discount > 0)
+                            {
+                                <option>You have applied a coupon - @Model.Discount.ToString("C") off</option>
+                            }
+                            @foreach (var coupon in coupons)
+                            {
+                                <option value="@coupon.Code">@coupon.Code - @coupon.DiscountAmount.ToString("C") off</option>
+                            }
+                        </select>
+                        <button type="submit" class="btn btn-success">Apply Coupon</button>
+                    </div>
+                </form>
+
+                <div class="text-end mt-4">
+                    <a href="#" class="btn" style="background-color: #4c7622;color:white;">Proceed to Checkout</a>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info">
+                    Your cart is empty.
+                </div>
+            }
+        </div>
+    </div>
+</div>

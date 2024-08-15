@@ -1,0 +1,81 @@
+﻿@model List<Product>
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello!</h1>
+    <p>Bắt đầu project từ đây nha. Chúc may mắn :) </p>
+    <div class="row justify-content-center">
+        @foreach (var item in Model)
+        {
+            @if (item != null)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+                            <p class="card-text">@item.Price.ToString("C")</p>
+                            <form action="/Cart/AddToCart" method="post" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" value="1" min="1" class="form-control me-2"
+                                    style="width: 80px;" />
+                                <input type="hidden" name="productId" value="@item.Id" />
+                                @if (HttpContextAccessor.HttpContext.Request.Cookies["LoginGoogle"] == "true" ||
+                               User.Identity.IsAuthenticated)
+                                {
+                                    <button type="submit" class="btn" style="background-color: #4c7622; color:white;">Add to
+                                        Cart</button>
+                                }
+                                else
+                                {
+                                    <a href="javascript:void(0);" onclick="alert('Pls login account before add to cart.')"
+                                        class="btn btn-primary">Add to Cart</a>
+                                }
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    @* ----------------- chatbox ----------------------------------*@
+    <div class=" d-flex juticanter mb-5">
+        <!-- Biểu tượng chatbox -->
+        @* Phần chatbox được thêm vào *@
+        <button id="chatbot-toggle-btn"><img src="https://cdn-icons-png.flaticon.com/128/10185/10185063.png"
+                alt="buttonpng" style="width: 30px;" /></button>
+        <div class="chatbot-popup" id="chatbot-popup">
+            <div class="chat-header">
+                <span>Chatbot</span>
+                <button id="close-btn">&times;</button>
+            </div>
+            <div class="chat-box" id="chat-box"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type a message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+
+
+        <script>
+            const chatbotToggleBtn = document.getElementById("chatbot-toggle-btn");
+            const chatbotPopup = document.getElementById("chatbot-popup");
+            const closeBtn = document.getElementById("close-btn");
+
+            chatbotToggleBtn.addEventListener("click", () => {
+                chatbotPopup.style.display = "block";
+            });
+
+            closeBtn.addEventListener("click", () => {
+                chatbotPopup.style.display = "none";
+            });
+        </script>
+
+
+    </div>
+
+</div>
