@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amaza\\RiderProjects\\DotnetProject2025\\DotnetProject2025\\DotnetProject2025.csproj": {}
+    "C:\\Users\\FPT Shop\\Downloads\\dotnet-team-project-kimanh-origin\\DotnetProject2025\\DotnetProject2025.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amaza\\RiderProjects\\DotnetProject2025\\DotnetProject2025\\DotnetProject2025.csproj": {
+    "C:\\Users\\FPT Shop\\Downloads\\dotnet-team-project-kimanh-origin\\DotnetProject2025\\DotnetProject2025.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amaza\\RiderProjects\\DotnetProject2025\\DotnetProject2025\\DotnetProject2025.csproj",
+        "projectUniqueName": "C:\\Users\\FPT Shop\\Downloads\\dotnet-team-project-kimanh-origin\\DotnetProject2025\\DotnetProject2025.csproj",
         "projectName": "DotnetProject2025",
-        "projectPath": "C:\\Users\\amaza\\RiderProjects\\DotnetProject2025\\DotnetProject2025\\DotnetProject2025.csproj",
-        "packagesPath": "C:\\Users\\amaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amaza\\RiderProjects\\DotnetProject2025\\DotnetProject2025\\obj\\",
+        "projectPath": "C:\\Users\\FPT Shop\\Downloads\\dotnet-team-project-kimanh-origin\\DotnetProject2025\\DotnetProject2025.csproj",
+        "packagesPath": "C:\\Users\\FPT Shop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FPT Shop\\Downloads\\dotnet-team-project-kimanh-origin\\DotnetProject2025\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\amaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\FPT Shop\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +32,66 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
