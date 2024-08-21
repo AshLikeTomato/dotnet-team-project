@@ -1,0 +1,25 @@
+@model DotnetProject2025.Models.ViolationReport
+
+@using (Html.BeginForm("SubmitReport", "Report", FormMethod.Post))
+{
+    <div>
+        <label for="UserName">Tên người dùng:</label>
+        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+    </div>
+    <div>
+        <label for="Email">Địa chỉ email:</label>
+        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+    </div>
+    <div>
+        <label for="ReportDetails">Chi tiết báo cáo:</label>
+        @Html.TextAreaFor(model => model.ReportDetails, new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-primary">Gửi báo cáo</button>
+}
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}

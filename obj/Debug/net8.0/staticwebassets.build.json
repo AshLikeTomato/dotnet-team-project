@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eYr93icSkz/L0P4ujJA5uWWuGxOPO2oNSe6iEBkGlXs=",
+  "Hash": "I3TLiQiuYnJpYWw2VWKlTgVuPHToZqbprOj10MIjJqc=",
   "Source": "DotnetProject2025",
   "BasePath": "_content/DotnetProject2025",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\thang\\OneDrive\\Máy tính\\dotnet-team-project\\DotnetProject2025\\wwwroot\\images\\products\\apple.png",
+      "SourceId": "DotnetProject2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thang\\OneDrive\\Máy tính\\dotnet-team-project\\DotnetProject2025\\wwwroot\\",
+      "BasePath": "_content/DotnetProject2025",
+      "RelativePath": "images/products/apple.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\apple.png"
     },
     {
       "Identity": "C:\\Users\\thang\\OneDrive\\Máy tính\\dotnet-team-project\\DotnetProject2025\\wwwroot\\images\\products\\tree.png",

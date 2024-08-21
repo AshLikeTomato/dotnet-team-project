@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\thang\\OneDrive\\Máy tính\\dotnet-team-project\\DotnetProject2025\\wwwroot\\images\\products\\apple.png",
+      "PackagePath": "staticwebassets\\images\\products\\apple.png"
+    },
+    {
       "Id": "C:\\Users\\thang\\OneDrive\\Máy tính\\dotnet-team-project\\DotnetProject2025\\wwwroot\\images\\products\\tree.png",
       "PackagePath": "staticwebassets\\images\\products\\tree.png"
     },

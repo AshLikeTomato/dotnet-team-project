@@ -1454,3 +1454,4 @@ C:\Users\thang\OneDrive\Máy tính\dotnet-team-project\DotnetProject2025\obj\Deb
 C:\Users\thang\OneDrive\Máy tính\dotnet-team-project\DotnetProject2025\obj\Debug\net8.0\DotnetProject2025.pdb
 C:\Users\thang\OneDrive\Máy tính\dotnet-team-project\DotnetProject2025\obj\Debug\net8.0\DotnetProject2025.genruntimeconfig.cache
 C:\Users\thang\OneDrive\Máy tính\dotnet-team-project\DotnetProject2025\obj\Debug\net8.0\ref\DotnetProject2025.dll
+C:\Users\thang\OneDrive\Máy tính\dotnet-team-project\DotnetProject2025\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

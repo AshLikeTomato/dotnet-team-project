@@ -8,7 +8,9 @@
 
     <ItemGroup>
       <PackageReference Include="DotNetEnv" Version="3.1.0" />
+      <!-- Giữ lại FirebaseAdmin nếu bạn cần -->
       <PackageReference Include="FirebaseAdmin" Version="3.0.0" />
+      <!-- Sử dụng FirebaseDatabase.net thay vì Firebase.Database -->
       <PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
       <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
       <PackageReference Include="Google.Cloud.Firestore" Version="3.8.0" />

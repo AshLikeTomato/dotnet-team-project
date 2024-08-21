@@ -1,0 +1,75 @@
+@model List<Product>
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Home Page";
+    var isAdmin = ViewData["IsAdmin"] != null && (bool)ViewData["IsAdmin"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello!</h1>
+    <p>Bắt đầu project từ đây nha. Chúc may mắn :) </p>
+
+    @if (isAdmin)
+    {
+        <div class="alert alert-warning">Bạn đang đăng nhập với tư cách admin!</div>
+        <div id="chatbox">
+            <h3>Chat với khách hàng</h3>
+            <textarea id="messageContent" placeholder="Nhập tin nhắn..."></textarea>
+            <button id="sendMessageBtn">Gửi</button>
+            <div id="messages"></div>
+        </div>
+    }
+
+    <div class="row justify-content-center">
+        @foreach (var item in Model)
+        {
+            @if (item != null)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+                            <p class="card-text">@item.Price.ToString("C")</p>
+                            <form action="/Cart/AddToCart" method="post" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" value="1" min="1" class="form-control me-2" style="width: 80px;" />
+                                <input type="hidden" name="productId" value="@item.Id" />
+                                @if (HttpContextAccessor.HttpContext.Request.Cookies["LoginGoogle"] == "true" || User.Identity.IsAuthenticated)
+                                {
+                                    <button type="submit" class="btn" style="background-color: #4c7622; color:white;">Add to Cart</button>
+                                }
+                                else
+                                {
+                                    <a href="javascript:void(0);" onclick="alert('Pls login account before add to cart.')" class="btn btn-primary">Add to Cart</a>
+                                }
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('sendMessageBtn').addEventListener('click', function () {
+            const content = document.getElementById('messageContent').value;
+            const receiverId = "khachhang-id"; // Thay bằng ID của khách hàng
+
+            fetch('/chat/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ receiverId, content })
+            }).then(response => response.json()).then(data => {
+                if (data.success) {
+                    // Xử lý khi gửi thành công
+                    document.getElementById('messages').innerHTML += `<div>${content}</div>`;
+                    document.getElementById('messageContent').value = ''; // Xóa nội dung ô nhập
+                }
+            });
+        });
+    </script>
+}

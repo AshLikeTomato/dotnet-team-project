@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace DotnetProject2025.Controllers
 {
@@ -33,6 +34,9 @@ namespace DotnetProject2025.Controllers
 
             // Chuyển đổi Dictionary thành List<Product>
             var productList = productsDict.Values.ToList();
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ViewData["IsAdmin"] = userId == "yKy1WrjEXOTBPDV5W7EfosdGQJQ2";
 
             return View(productList);
         }

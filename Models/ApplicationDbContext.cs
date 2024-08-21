@@ -5,6 +5,10 @@ namespace DotnetProject2025.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public ApplicationDbContext()
+        {
+        }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
@@ -15,6 +19,8 @@ namespace DotnetProject2025.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Coupon> Coupons { get; set; }
         public object ChatMessages { get; internal set; }
+        public object Conversations { get; internal set; }
+        public object ViolationReports { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

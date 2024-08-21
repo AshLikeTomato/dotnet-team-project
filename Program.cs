@@ -1,5 +1,6 @@
 ﻿using DotnetProject2025.Models;
 using DotnetProject2025.Services;
+using Firebase.Database;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -32,6 +33,10 @@ FirebaseApp.Create(new AppOptions()
 {
     Credential = GoogleCredential.FromJson(firebaseSettings.ToString())
 });
+builder.Services.AddSingleton(new FirebaseClient("https://doannet-4a9c2-default-rtdb.asia-southeast1.firebasedatabase.app/"));
+
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -121,19 +126,10 @@ app.MapControllerRoute(
 
 
 // -------------------------------------------
-app.UseRouting();
 
-app.UseCors();
 
-app.UseAuthentication();
-app.UseAuthorization();
+// Đọc cấu hình SMTP từ appsettings.json
 
-// Định tuyến cho các Controller
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// Định tuyến cho SignalR Hubs
-app.MapHub<ChatHub>("/chathub");
 
 app.Run();
